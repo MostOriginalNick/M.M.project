@@ -1,0 +1,214 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container div{
+    display: inline-block;
+}
+.foontainer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+main {
+    border-bottom: solid 1px rgba(188, 208, 229, 0.50);;
+}
+.foontainer div{
+    display: flex;
+}
+nav{
+    display: inline-block;
+}
+ul {
+    display: inline-block;
+}
+li {
+    display: inline-block;
+}
+header img:first-child {
+    margin-right: 8px;
+}
+header nav ul a {
+    color: #2F281E;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    margin-right: 20px;
+}
+header nav ul a:hover {
+    color: #FF9900;
+}
+header nav ul a:last-child {
+    margin-right: 0px;
+}
+header div:first-child {
+    margin-right: 180px;
+}
+header nav {
+    margin-right: 189px;
+}
+header {
+    padding: 17px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 0px;
+}
+.in {
+    background-color: #FFF;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    margin-right: 28px;
+}
+.up {
+    border-radius: 4px;
+    background: var(--Orange, #F90);
+    color: #FFFFFF;
+    border: none;
+}
+button {
+    width: 110px;
+    height: 46px;
+    color: var(--text, #2F281E);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.first {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.first div {
+    display: inline-block;
+}
+.left {
+    width: 500px;
+    margin-right: 52px;
+}
+.left h1 {
+    color: #2F281E;
+    font-family: Montserrat;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; /* 122.727% */
+    height: 110px;
+    margin-bottom: 30px;
+}
+.left p {
+    color: #544837;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    height: 91px;
+    margin-bottom: 20px;
+}
+.left button {
+    width: 180px;
+    height: 50px;
+    border-radius: 4px;
+    background: var(--Orange, #F90);
+    border: none;
+    color: #FFFFFF;
+}
+.txtmain {
+    display: flex;
+    width: 135px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+}
+.txtadd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+footer h2, h3 {
+    color: #2F281E;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+}
+footer h6 {
+    color: #544837;
+    font-feature-settings: 'clig' off, 'liga' off;
+/* simple-text */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+}
+footer h2 {
+    width: 280px;
+    height: 57px;
+}
+footer input {
+    display: flex;
+    width: 340px;
+    height: 50px;
+    padding: 0px 10px;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    border: 1px solid #BCD0E5;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+footer input::placeholder {
+    color: #BCD0E5;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+footer button {
+    display: flex;
+    width: 180px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #F90;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
