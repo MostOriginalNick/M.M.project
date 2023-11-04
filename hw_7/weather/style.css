@@ -1,0 +1,95 @@
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    border: 25px solid #2B81AC;
+    background: #39C;
+    padding: 40px 111px;
+    font-size: 0;
+}
+h1 {
+    color: #FFF;
+    font-family: Lucida Sans Unicode;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lucida Sans Unicode;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 26px;
+}
+h6 {
+    color: #FFF;
+    font-family: Lucida Sans Unicode;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 37px;
+}
+p {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Lucida Sans Unicode;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 39px;
+}
+.main {
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    margin-top: 39px;
+}
+.card {
+    display: inline-block;
+    width: 25%;
+    border: 2px solid #FFF;
+    font-size: 16px;
+    box-sizing: border-box;
+    opacity: 0.8;
+}
+.lisbon {
+    width: 50%;
+    background-color: #70B8DB;
+}
+.paris {
+    background-color: #33CCCC;
+}
+.belgrade {
+    background-color: #996699;
+}
+.venice {
+    background-color: #C24747;
+}
+.tel {
+    background-color: #E2674A;
+}
+.cair {
+    background-color: #FFCC66;
+}
+.nyc {
+    background-color: #99CC99;
+}
+.nd {
+    background-color: #669999;
+}
+.sf {
+    background-color: #CC6699;
+    width: 50%;
+}
+.tokyo {
+    background-color: #339966;
+}
+.sydney {
+    width: 100%;
+    background-color: #666699;
+}
