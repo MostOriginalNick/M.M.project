@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{
+    transition: all .1s ease-in;
+}
+.container {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-bottom: 1px solid #828282;
+}
+header nav ul {
+    display: flex;
+}
+
+header nav ul a{
+    margin-right: 40px;
+    color: #828282;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+header nav ul a:hover{
+    color: #070707;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+header nav ul a:last-child{
+    margin-right: 0;
+}
+.first_screen {
+    margin-top: 12px;
+}
+h1 {
+    color: #070707;
+    font-family: Open Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.first_screen img{
+    width: 970px;
+    height: 387px;
+    margin-top: 50px;
+}
+.about_me {
+    background-color: #F6F6F6;
+    padding: 100px;
+}
+
+.about_me h2{
+    color: #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.about_me p{
+    color:#070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    margin: 0 auto;
+}
+.about_me p:nth-child(1){
+    width: 480px;
+    margin-bottom: 30px;
+}
+.about_me p:nth-child(2){
+    width: 406px;
+    margin-bottom: 30px;
+}
+.about_me p:nth-child(3){
+    width: 321px;
+}
+.skills img{
+   margin-right: 97px;
+}
+.skills img:last-child{
+    margin-right: 0px;
+}
+.skills h2{
+    color: #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.skills p{
+    color: #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.skills div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills{
+    padding: 100px;
+}
+.skills h2{
+    margin-bottom: 20px;
+}
+.skills div:nth-child(1){
+    margin-bottom: 50px;
+}
+.portfolio{
+    padding: 100px;
+    background-color: #F6F6F6;
+}
+.portfolio h2{
+    color:  #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.portfolio figcaption{
+    color:  #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.portfolio img{
+    margin-bottom: 40px;
+}
+.portfolio div{
+    margin-bottom: 70px;
+}
+.portfolio div:last-child{
+    margin-bottom: 0px;
+}
+.contacts{
+    padding: 100px;
+}
+.contacts h2{
+    color:  #070707;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.contacts p{
+    color: var(--Black, #070707);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+.contacts h6{
+    color: #828282;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 60px;
+}
+.contacts div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+.social:hover{
+    opacity: 0.5;
+}
+.button:hover{
+    width: 200px;
+    height: 50px;
+}
+
