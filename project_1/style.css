@@ -166,9 +166,18 @@
 }
 .header .header__navigation .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 84px;
+}
+.header .header__navigation .navigation .burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 9px;
+}
+.header .header__navigation .navigation .burger-menu .burger-menu__line {
+  width: 40px;
+  border-bottom: 2px solid white;
 }
 .header .header__navigation .navigation .menu ul {
   display: flex;
@@ -190,8 +199,9 @@
 .why-us .why-us__content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 124px 0;
+  justify-content: space-between;
+  padding-top: 124px;
+  padding-bottom: 124px;
 }
 .why-us .why-us__content .why-us__text {
   max-width: 648px;
@@ -353,6 +363,7 @@
 
 .footer {
   background-color: #000000;
+  display: none;
 }
 .footer .container {
   display: flex;
@@ -379,6 +390,7 @@
     max-width: 1140px;
     padding-left: 32px;
     padding-right: 32px;
+    box-sizing: border-box;
   }
   .why-us .why-us__content .why-us__text {
     max-width: 558px;
@@ -390,14 +402,96 @@
     max-width: 558px;
   }
 }
-@media (max-width: 1200x) {
+@media (max-width: 1200px) {
   .container {
     max-width: 960px;
+    box-sizing: border-box;
   }
   .why-us .why-us__content .why-us__photo .lake {
     margin-right: 36px;
   }
   .why-us .why-us__content .why-us__photo .cliff {
     margin-left: 36px;
+  }
+  .why-us .why-us__content .why-us__text {
+    max-width: 550px;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    max-width: 720px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header .header__navigation .navigation {
+    flex-direction: column;
+    height: auto;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .why-us .why-us__content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column-reverse;
+    gap: 37px;
+  }
+  .why-us .why-us__content .why-us__text {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-us .why-us__content .why-us__text .heading-2 {
+    text-align: center;
+  }
+  .why-us .why-us__content .why-us__text .body-2 {
+    text-align: center;
+  }
+  .why-us .why-us__content .why-us__photo {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .why-us .why-us__content .why-us__photo img {
+    width: 49%;
+  }
+  .why-us .why-us__content .why-us__photo .lake {
+    margin-right: 0;
+  }
+  .why-us .why-us__content .why-us__photo .cliff {
+    margin-left: 0;
+  }
+  .steps {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .steps .container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .book-now-1 .container .book__content-1 {
+    max-width: fit-content;
+  }
+  .book-now-2 .container .book__content-2 {
+    max-width: fit-content;
+  }
+}
+@media (max-width: 630px) {
+  .container {
+    max-width: 540px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .header .header__navigation .navigation {
+    position: relative;
+  }
+  .header .header__navigation .navigation .burger-menu {
+    display: flex;
+    position: absolute;
+    right: 18px;
+  }
+  .header .header__navigation .navigation .menu {
+    display: none;
   }
 }
