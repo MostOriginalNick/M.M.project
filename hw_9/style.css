@@ -1,0 +1,236 @@
+* {
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  transition: all 0.1s ease-in;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Delius Unicase;
+  src: url(font/DeliusUnicase-Regular.ttf);
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+  font-family: Delius Unicase;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.item-cover {
+  border-radius: 20px;
+  background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.item-cover .name {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.item-cover .date {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #E0E0E0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.item-cover .like {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: none;
+}
+.item-cover .download {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+}
+.item-cover:hover {
+  background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+}
+.item-cover:hover .like {
+  display: block;
+  border-radius: 8px;
+  background: rgba(224, 224, 224, 0.5);
+  padding: 10px;
+}
+.item-cover:hover .like:hover {
+  background: #E0E0E0;
+}
+.item-cover:hover .download {
+  display: block;
+  border-radius: 8px;
+  background: rgba(224, 224, 224, 0.5);
+  padding: 10px;
+}
+.item-cover:hover .download:hover {
+  background: #E0E0E0;
+}
+
+.arc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "item-1 item-2 item-2" "item-3 item-3 item-4" "item-5 item-6 item-6";
+  gap: 30px;
+  height: 1170px;
+}
+.arc .arc__item-1 {
+  background-image: url(img/arc/arc-1.png);
+  border-radius: 20px;
+  grid-area: item-1;
+}
+.arc .arc__item-2 {
+  background-image: url(img/arc/arc-2.png);
+  border-radius: 20px;
+  grid-area: item-2;
+}
+.arc .arc__item-3 {
+  background-image: url(img/arc/arc-3.png);
+  border-radius: 20px;
+  grid-area: item-3;
+}
+.arc .arc__item-4 {
+  background-image: url(img/arc/arc-4.png);
+  border-radius: 20px;
+  grid-area: item-4;
+}
+.arc .arc__item-5 {
+  background-image: url(img/arc/arc-5.png);
+  border-radius: 20px;
+  grid-area: item-5;
+}
+.arc .arc__item-6 {
+  background-image: url(img/arc/arc-6.png);
+  border-radius: 20px;
+  grid-area: item-6;
+}
+
+.nat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "item-1 item-2 item-2" "item-3 item-3 item-4" "item-3 item-3 item-4" "item-5 item-5 item-6";
+  gap: 30px;
+  height: 1570px;
+}
+.nat .nat__item-1 {
+  background-image: url(img/nat/nat-1.png);
+  border-radius: 20px;
+  grid-area: item-1;
+}
+.nat .nat__item-2 {
+  background-image: url(img/nat/nat-2.png);
+  border-radius: 20px;
+  grid-area: item-2;
+}
+.nat .nat__item-3 {
+  background-image: url(img/nat/nat-3.png);
+  border-radius: 20px;
+  grid-area: item-3;
+}
+.nat .nat__item-4 {
+  background-image: url(img/nat/nat-4.png);
+  border-radius: 20px;
+  grid-area: item-4;
+}
+.nat .nat__item-5 {
+  background-image: url(img/nat/nat-5.png);
+  border-radius: 20px;
+  grid-area: item-5;
+}
+.nat .nat__item-6 {
+  background-image: url(img/nat/nat-6.png);
+  border-radius: 20px;
+  grid-area: item-6;
+}
+
+.peo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "item-1 item-2 item-3" "item-4 item-2 item-5" "item-6 item-7 item-5" "item-6 item-8 item-8" "item-9 item-9 item-10";
+  gap: 30px;
+  height: 1970px;
+}
+.peo .peo__item-1 {
+  background-image: url(img/peo/peo-1.png);
+  border-radius: 20px;
+  grid-area: item-1;
+}
+.peo .peo__item-2 {
+  background-image: url(img/peo/peo-2.png);
+  border-radius: 20px;
+  grid-area: item-2;
+}
+.peo .peo__item-3 {
+  background-image: url(img/peo/peo-3.png);
+  border-radius: 20px;
+  grid-area: item-3;
+}
+.peo .peo__item-4 {
+  background-image: url(img/peo/peo-4.png);
+  border-radius: 20px;
+  grid-area: item-4;
+}
+.peo .peo__item-5 {
+  background-image: url(img/peo/peo-5.png);
+  border-radius: 20px;
+  grid-area: item-5;
+}
+.peo .peo__item-6 {
+  background-image: url(img/peo/peo-6.png);
+  border-radius: 20px;
+  grid-area: item-6;
+}
+.peo .peo__item-7 {
+  background-image: url(img/peo/peo-7.png);
+  border-radius: 20px;
+  grid-area: item-7;
+}
+.peo .peo__item-8 {
+  background-image: url(img/peo/peo-8.png);
+  border-radius: 20px;
+  grid-area: item-8;
+}
+.peo .peo__item-9 {
+  background-image: url(img/peo/peo-9.png);
+  border-radius: 20px;
+  grid-area: item-9;
+}
+.peo .peo__item-10 {
+  background-image: url(img/peo/peo-10.png);
+  border-radius: 20px;
+  grid-area: item-10;
+}
