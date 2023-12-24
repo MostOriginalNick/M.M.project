@@ -64,7 +64,7 @@ console.log (users);
 
 let car = {
     brand: 'Tesla',
-    model: 'x',
+    model: 'X',
     releaseDate: 2020,
     averageSpeed: 120,
     gasVolume: 400,
@@ -75,15 +75,40 @@ let car = {
 // Метод, який виводить на екран інформацію про автомобіль.
 
 function carInfo (obj){
-    let info = [];
-    for (let key in obj){
-        info.push(obj[key])
-    }
-    console.log(info)
-    alert(info)
+   alert(`Brand: ${obj.brand} Model: ${obj.model} Release Date: ${obj.releaseDate} Average Speed: ${obj.averageSpeed}
+   Gas Volume: ${obj.gasVolume} Gas Consumption: ${obj.gasConsumption} Drivers: ${obj.drivers}`)
 }
 carInfo(car);
 
+// Додавання ім’я водія у список
+
+function addName (name) {
+  car.drivers.push(name);
+}
+
+addName("Jonh")
+
+// Перевірка водія на наявність його ім’я у списку
+
+function nameCheck (name) {
+  for(let n of car.drivers){
+    if(name == n){
+      console.log("On List")
+    } else {console.log('Not On List')}
+  }
+}
+
+nameCheck('Jonh');
+nameCheck('Eva');
+
+// Підрахунок необхідного часу та кількості палива для подолання переданої відстані з середньою швидкістю. 
+// Враховуй, що через кожні 4 години дороги водієві необхідно робити перерву на 1 годину. 
+
+function carCalculator (obj, dist) {
+  return [`Gas spent: ${obj.gasConsumption * dist / 100} Time spent: ${dist / obj.averageSpeed + Math.floor((dist / obj.averageSpeed) / 4)}`]
+}
+
+console.log (carCalculator(car, 500))
 
 
 
